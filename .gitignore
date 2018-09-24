@@ -3,3 +3,6 @@ Program/PP1/bin/
 Program/PP1/obj/
 ~\$*
 ~$*
+/Program/PP1/Properties/Settings.Designer.cs
+/Program/PP1/Properties/Settings.settings
+/Program/PP1/PP1.csproj.user
