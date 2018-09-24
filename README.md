@@ -1,2 +1,2 @@
-# pp1
-PP1 program
+# Profesional Practices 1
+Simple teacher program written in class
