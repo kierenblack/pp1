@@ -12,8 +12,34 @@ namespace PP1
     {
         static void Main()
         {
-            
-            
+            Console.WriteLine("Hello. Are you enjoying your classes?");
+            char response = char.ToLower(Console.ReadLine()[0]);
+            switch (response)
+            {
+                case 'y':
+                    ResponseYes();
+                    break;
+                case 'n':
+                    ResponseNo();
+                    break;
+                default:
+                    break;
+            }
+
+            Console.ReadLine(); // the end
+
+        }
+
+        static void ResponseYes()
+        {
+            // Structure for Yes starts here
+            Console.WriteLine("You answered Yes");
+        }
+
+        static void ResponseNo()
+        {
+            // Structure for No starts here
+            Console.WriteLine("You answered No");
         }
 
         static char Menu1()

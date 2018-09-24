@@ -1,7 +1,0 @@
-H:\Profesional Practices\pp1\Program\PP1\obj\Debug\PP1.csprojResolveAssemblyReference.cache
-H:\Profesional Practices\pp1\Program\PP1\obj\Debug\PP1.csproj.CoreCompileInputs.cache
-H:\Profesional Practices\pp1\Program\PP1\bin\Debug\PP1.exe.config
-H:\Profesional Practices\pp1\Program\PP1\bin\Debug\PP1.exe
-H:\Profesional Practices\pp1\Program\PP1\bin\Debug\PP1.pdb
-H:\Profesional Practices\pp1\Program\PP1\obj\Debug\PP1.exe
-H:\Profesional Practices\pp1\Program\PP1\obj\Debug\PP1.pdb
