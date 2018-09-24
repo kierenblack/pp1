@@ -4,7 +4,6 @@
  * Professional Practice # 1           *
  ***************************************/
 using System;
-using System.Threading;
 
 namespace PP1
 {
