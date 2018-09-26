@@ -62,7 +62,7 @@ namespace PP1
         static void Yes1()
         {
             Console.Clear();
-            Console.WriteLine("Hello :)");
+            Console.WriteLine("Hello, nice to see you");
         }
 
         static void Yes2()
@@ -70,7 +70,37 @@ namespace PP1
 
         }
 
+        static void Yes2_1(string name, string feedback)
+        {
+
+        }
+
         static void Yes3()
+        {
+
+        }
+
+        static void Yes3_1()
+        {
+
+        }
+
+        static void Yes3_1_1()
+        {
+
+        }
+
+        static void Yes3_1_2()
+        {
+
+        }
+
+        static void Yes3_1_3()
+        {
+
+        }
+
+        static void Yes3_1_4()
         {
 
         }
