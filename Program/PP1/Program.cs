@@ -80,27 +80,7 @@ namespace PP1
 
         }
 
-        static void Yes3_1()
-        {
-
-        }
-
-        static void Yes3_1_1()
-        {
-
-        }
-
-        static void Yes3_1_2()
-        {
-
-        }
-
-        static void Yes3_1_3()
-        {
-
-        }
-
-        static void Yes3_1_4()
+        static void Yes3_1(int subject)
         {
 
         }
@@ -110,7 +90,27 @@ namespace PP1
 
         }
 
+        static void No1_1()
+        {
+
+        }
+
+        static void No1_1_1(int subject)
+        {
+
+        }
+
         static void No2()
+        {
+
+        }
+
+        static void No2_1()
+        {
+
+        }
+
+        static void No2_1_1(int subject)
         {
 
         }
@@ -120,7 +120,27 @@ namespace PP1
 
         }
 
+        static void No3_1()
+        {
+
+        }
+
+        static void No3_1_1(int choice)
+        {
+
+        }
+
         static void No4()
+        {
+
+        }
+
+        static void No4_1()
+        {
+
+        }
+
+        static void No4_1_1(int choice)
         {
 
         }
