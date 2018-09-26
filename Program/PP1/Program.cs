@@ -62,17 +62,19 @@ namespace PP1
         static void Yes1()
         {
             Console.Clear();
-            Console.WriteLine("Hello :)");
+            Console.WriteLine("Ok. Hello, nice to see you)");
         }
 
         static void Yes2()
         {
-
+            Console.Clear();
+            Console.WriteLine("Okay. What do you want to say?)");
         }
 
         static void Yes3()
         {
-
+            Console.Clear();
+            Console.WriteLine("Which class?");
         }
 
         static void No1()
