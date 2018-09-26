@@ -71,13 +71,33 @@ namespace PP1
             Console.WriteLine("Okay. What do you want to say?)");
         }
 
+        static void Yes2_1(string name, string feedback)
+        {
+
+        }
+
         static void Yes3()
         {
             Console.Clear();
             Console.WriteLine("Which class?");
         }
 
+        static void Yes3_1(int subject)
+        {
+
+        }
+
         static void No1()
+        {
+
+        }
+
+        static void No1_1()
+        {
+
+        }
+
+        static void No1_1_1(int subject)
         {
 
         }
@@ -87,12 +107,42 @@ namespace PP1
 
         }
 
+        static void No2_1()
+        {
+
+        }
+
+        static void No2_1_1(int subject)
+        {
+
+        }
+
         static void No3()
         {
 
         }
 
+        static void No3_1()
+        {
+
+        }
+
+        static void No3_1_1(int choice)
+        {
+
+        }
+
         static void No4()
+        {
+
+        }
+
+        static void No4_1()
+        {
+
+        }
+
+        static void No4_1_1(int choice)
         {
 
         }
