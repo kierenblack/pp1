@@ -31,6 +31,7 @@ namespace PP1
 
         static void ResponseYes()
         {
+            Console.Clear();
             Console.WriteLine("Thats good to hear, what brings you here?");
             Console.WriteLine("1 - I just wanted to say hello");
             Console.WriteLine("2 - I just wanted to share feedback");
@@ -56,7 +57,30 @@ namespace PP1
         static void ResponseNo()
         {
             // Structure for No starts here
-            Console.WriteLine("You answered No");
+            Console.Clear();
+            Console.WriteLine("I am sorry to hear. What seems to be the problem?");
+            Console.WriteLine("1 - I don’t understand…");
+            Console.WriteLine("2 - Class is boring");
+            Console.WriteLine("3 - I’m having trouble with…");
+            Console.WriteLine("4 - I’m getting bullied");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+            switch (response)
+            {
+                case '1':
+                    No1();
+                    break;
+                case '2':
+                    No2();
+                    break;
+                case '3':
+                    No3();
+                    break;
+                case '4':
+                    No4();
+                    break;
+                default:
+                    break;
+            }
         }
 
         static void Yes1()
@@ -89,17 +113,60 @@ namespace PP1
 
         static void No1()
         {
-
+            Console.Clear();
+            Console.WriteLine("What class or subject do you not understand?");
+            Console.WriteLine("1 - Maths");
+            Console.WriteLine("2 - Professional Practices");
+            Console.WriteLine("3 - Devices and Platforms");
+            Console.WriteLine("4 - Programming");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+            switch (response)
+            {
+                case '1':
+                    No1_1("Maths");
+                    break;
+                case '2':
+                    No1_1("Professional Practices");
+                    break;
+                case '3':
+                    No1_1("Devices and Platforms");
+                    break;
+                case '4':
+                    No1_1("Programming");
+                    break;
+                default:
+                    break;
+            }
         }
 
-        static void No1_1()
+        static void No1_1(string subject)
         {
-
+            Console.Clear();
+            Console.WriteLine("I am sorry to hear you are having problems in " + subject + ". How would you like me to help?");
+            Console.WriteLine("1 - Extra Material");
+            Console.WriteLine("2 - Student Support");
+            Console.WriteLine("3 - Teacher Support");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+            No1_1_1(response);
         }
 
-        static void No1_1_1(int subject)
+        static void No1_1_1(char option)
         {
-
+            Console.Clear();
+            switch (option)
+            {
+                case '1':
+                    Console.WriteLine("I will organise some extra material for you.");
+                    break;
+                case '2':
+                    Console.WriteLine("I will make an appoint with student support for you.");
+                    break;
+                case '3':
+                    Console.WriteLine("I will make an appointment for you to talk to your teacher.");
+                    break;
+                default:
+                    break;
+            }
         }
 
         static void No2()
