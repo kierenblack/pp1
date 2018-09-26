@@ -31,14 +31,68 @@ namespace PP1
 
         static void ResponseYes()
         {
-            // Structure for Yes starts here
-            Console.WriteLine("You answered Yes");
+            Console.WriteLine("Thats good to hear, what brings you here?");
+            Console.WriteLine("1 - I just wanted to say hello");
+            Console.WriteLine("2 - I just wanted to share feedback");
+            Console.WriteLine("3 - I want extra material for my lectures");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+            switch (response)
+            {
+                case '1':
+                    Yes1();
+                    break;
+                case '2':
+                    Yes2();
+                    break;
+                case '3':
+                    Yes3();
+                    break;
+                default:
+                    break;
+            }
+
         }
 
         static void ResponseNo()
         {
             // Structure for No starts here
             Console.WriteLine("You answered No");
+        }
+
+        static void Yes1()
+        {
+            Console.Clear();
+            Console.WriteLine("Hello :)");
+        }
+
+        static void Yes2()
+        {
+
+        }
+
+        static void Yes3()
+        {
+
+        }
+
+        static void No1()
+        {
+
+        }
+
+        static void No2()
+        {
+
+        }
+
+        static void No3()
+        {
+
+        }
+
+        static void No4()
+        {
+
         }
 
         static char Menu1()
