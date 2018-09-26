@@ -134,17 +134,27 @@ namespace PP1
 
         static void No4()
         {
-
+            //Bullied who?
         }
 
         static void No4_1()
         {
-
+            //Bullied with name or ss
         }
 
-        static void No4_1_1(int choice)
+        static void No4_1_1(int choice, string name)
         {
+            //Bullied with name, talk
+        }
 
+        static void No4_1_2(int choice, string name)
+        {
+            //Bullied talk to ss
+        }
+
+        static void No4_2()
+        {
+            //bullied not saying
         }
 
         static char Menu1()
