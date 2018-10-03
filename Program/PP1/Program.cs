@@ -86,13 +86,13 @@ namespace PP1
         static void Yes1()
         {
             Console.Clear();
-            Console.WriteLine("Ok. Hello, nice to see you)");
+            Console.WriteLine("Okay. Hello, nice to see you!");
         }
 
         static void Yes2()
         {
             Console.Clear();
-            Console.WriteLine("Okay. What do you want to say?)");
+            Console.WriteLine("Okay. What do you want to say and to what teacher?");
         }
 
         static void Yes2_1(string name, string feedback)
