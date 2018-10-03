@@ -108,7 +108,8 @@ namespace PP1
 
         static void Yes3_1(int subject)
         {
-
+            Console.Clear();
+            Console.WriteLine("I will organize extra material for that class");
         }
 
         static void No1()
@@ -201,7 +202,8 @@ namespace PP1
 
         static void No4()
         {
-            //Bullied who?
+            Console.Clear();
+            Console.WriteLine("Who is harassing you?");
         }
 
         static void No4_1()
@@ -216,7 +218,8 @@ namespace PP1
 
         static void No4_1_2(int choice, string name)
         {
-            //Bullied talk to ss
+            Console.Clear();
+            Console.WriteLine("I will arrange an appointment for you to talk to student services.");
         }
 
         static void No4_2()
