@@ -91,8 +91,12 @@ namespace PP1
 
         static void Yes2()
         {
+            //string name = "", feedback = "";
             Console.Clear();
             Console.WriteLine("Okay. What do you want to say and to what teacher?");
+            //Where does it read the response and what happens from here? From here it goes to Yes2_1()
+
+            //Yes2_1(name, feedback);
         }
 
         static void Yes2_1(string name, string feedback)
@@ -104,12 +108,14 @@ namespace PP1
         {
             Console.Clear();
             Console.WriteLine("Which class?");
+            //Where does it read the response and what happens from here?
         }
 
-        static void Yes3_1(int subject)
+        static void Yes3_1(int subject) // reads subject
         {
             Console.Clear();
             Console.WriteLine("I will organize extra material for that class");
+            //What happens to the subject that is sent here from the last method?
         }
 
         static void No1()
@@ -216,10 +222,11 @@ namespace PP1
             //Bullied with name, talk
         }
 
-        static void No4_1_2(int choice, string name)
+        static void No4_1_2(int choice, string name) // sent choice and name
         {
             Console.Clear();
             Console.WriteLine("I will arrange an appointment for you to talk to student services.");
+            // Where is the previous choice and name?
         }
 
         static void No4_2()
