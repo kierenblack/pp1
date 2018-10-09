@@ -1,6 +1,6 @@
 ﻿/***************************************
  * Mini Project # 2                    *
- * Sabi, Jae, Kieran, Charmain, Hong   *
+ * Sabi, Jae, Kieren, Charmain, Hong   *
  * Professional Practice # 1           *
  ***************************************/
 using System;
