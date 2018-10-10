@@ -94,8 +94,8 @@ namespace PP1
             {
                 string name = "", feedback = "";
                 Console.Clear();
-            Console.WriteLine("Okay. Please enter the teachers name and then your message?");
-            Console.WriteLine("Please enter the name of the teacher.Then your feedback in next sentence");
+            Console.WriteLine("Okay. Please enter the teachers name and then your feedback?");
+            Console.WriteLine("Please enter the name of the teacher. Then your feedback in next sentence");
             string temp = Console.ReadLine();
                 string[] sentence = temp.Split('.');
                 name = sentence[0];
