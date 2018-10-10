@@ -201,11 +201,12 @@ namespace PP1
                     break;
                 default:
                     break;
+            }
         }
 
         static void No2_1(string subject)
         {
-             Console.Clear();
+            Console.Clear();
             Console.WriteLine("I am sorry to hear that you are finding " + subject + " boring. I will ask your teacher to assign you advanced material.");
         }
 
@@ -263,73 +264,66 @@ namespace PP1
             // course related problem -> refer to student support
             Console.Clear();
             Console.WriteLine("I will make an appointment for you to talk to student support");
+            Console.ReadLine();
 
         }
-        
+
         static void No3_2_2()
         {
             // course related problem -> refer to class teacher
             Console.Clear();
             Console.WriteLine("I will make an appointment for you to talk to a class teacher");
-
+            Console.ReadLine();
         }
 
         static void No4()
         {
             Console.Clear();
             Console.WriteLine("Who is harassing you?");
+            string name = Console.ReadLine();
+            No4_1(name);
         }
 
         static void No4_1(string name)
         {
             Console.Clear();
-            Console.WriteLine("I am sorry to hear you are getting harassed by " + name + ". Bullying/Harassment is not acceptable at Otago Polytech. Would you like me to talk to" + name + " or Student Support Team?");
+            Console.WriteLine("I am sorry to hear you are getting harassed by " + name + ". Bullying/Harassment is not acceptable at Otago Polytech. Would you like me to talk to " + name + " or Student Support Team?");
             Console.WriteLine("1 - " + name + " ");
             Console.WriteLine("2 - Student Support Team");
             char response = Convert.ToChar(Console.ReadKey().KeyChar);
             switch (response)
-         {
-               case '1':
-                No4_1_1();
-                break;
-               case '2':
-                No4_1_2();
-                break;
-               default:
-                break;
-         }
+            {
+                case '1':
+                    No4_1_1(name);
+                    break;
+                case '2':
+                    No4_1_2();
+                    break;
+                default:
+                    break;
+            }
         }
 
 
         static void No4_1_1(string name)
         {
-           Console.Clear();
-           Console.WriteLine("I will Talk to " + name + " about their bullying behaviour.");
+            Console.Clear();
+            Console.WriteLine("I will Talk to " + name + " about their bullying behaviour.");
+            Console.ReadLine();
         }
 
         static void No4_1_2()
-        {        
-           Console.Clear();
-           Console.WriteLine("I will arrange an appointment for you to talk to student services to resolve the matter.");
+        {
+            Console.Clear();
+            Console.WriteLine("I will arrange an appointment for you to talk to student services to resolve the matter.");
+            Console.ReadLine();
         }
 
         static void No4_2()
         {
-           Console.Clear();
-           Console.WriteLine("It's absolutely fine if you do not want to mention their name here. I will arrange an appointment for you to talk to student services to resolve the matter.");
-        }
-
-        static char Menu1()
-        {
-            Console.WriteLine("Hello. what brings you here today?");
-            Console.WriteLine("Press 1 for issue");
-            Console.WriteLine("\t2 for problem");
-            Console.WriteLine("\t3 for bullying");
-            char response = Convert.ToChar(Console.ReadKey().KeyChar);
-            Console.WriteLine();
-            Console.WriteLine(response);
+            Console.Clear();
+            Console.WriteLine("It's absolutely fine if you do not want to mention their name here. I will arrange an appointment for you to talk to student services to resolve the matter.");
             Console.ReadLine();
-            return response;
         }
     }
 }
