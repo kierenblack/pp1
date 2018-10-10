@@ -178,17 +178,35 @@ namespace PP1
 
         static void No2()
         {
-
+            Console.Clear();
+            Console.WriteLine("What class is boring for you?");
+            Console.WriteLine("1 - Maths");
+            Console.WriteLine("2 - Professional Practices");
+            Console.WriteLine("3 - Devices and Platforms");
+            Console.WriteLine("4 - Programming");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+            switch (response)
+            {
+                case '1':
+                    No2_1("Maths");
+                    break;
+                case '2':
+                    No2_1("Professional Practices");
+                    break;
+                case '3':
+                    No2_1("Platforms and Devices");
+                    break;
+                case '4':
+                    No2_1("Programming");
+                    break;
+                default:
+                    break;
         }
 
         static void No2_1()
         {
-
-        }
-
-        static void No2_1_1(int subject)
-        {
-
+             Console.Clear();
+            Console.WriteLine("I am sorry to hear that you are finding " + subject + " boring. I will ask your teacher to assign you advanced material.");
         }
 
         static void No3()
@@ -262,26 +280,44 @@ namespace PP1
             Console.WriteLine("Who is harassing you?");
         }
 
-        static void No4_1()
-        {
-            //Bullied with name or ss
-        }
-
-        static void No4_1_1(int choice, string name)
-        {
-            //Bullied with name, talk
-        }
-
-        static void No4_1_2(int choice, string name) // sent choice and name
+        static void No4_1(string name)
         {
             Console.Clear();
-            Console.WriteLine("I will arrange an appointment for you to talk to student services.");
-            // Where is the previous choice and name?
+            Console.WriteLine("I am sorry to hear you are getting harassed by " + name + ". Bullying/Harassment is not acceptable at Otago Polytech. Would you like me to talk to" + name + " or Student Support Team?");
+            Console.WriteLine("1 - " + name + " ");
+            Console.WriteLine("2 - Student Support Team");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+            switch (response)
+         {
+               case '1':
+                No4_1_1();
+                break;
+               case '2':
+                No4_1_2();
+                break;
+               default:
+                break;
+         }
+        }
+
+
+        static void No4_1_1()
+        {
+           Console.Clear();
+           Console.WriteLine("I will Talk to " + name + " about their bullying behaviour.");
+        }
+
+        static void No4_1_2()
+        {        
+           Console.Clear();
+           Console.WriteLine("I will arrange an appointment for you to talk to student services to resolve the matter.");
         }
 
         static void No4_2()
         {
-            //bullied not saying
+           Console.Clear();
+           Console.WriteLine("It's absolutely fine if you do not want to mention their name here. I will arrange an appointment for you to talk to student services to resolve the matter.");
+           char response = Convert.ToChar(Console.ReadKey().KeyChar);
         }
 
         static char Menu1()
