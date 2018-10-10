@@ -179,7 +179,7 @@ namespace PP1
         static void No2()
         {
             Console.Clear();
-            Console.WriteLine("What class is boring for you?");
+            Console.WriteLine("Which class is boring for you?");
             Console.WriteLine("1 - Maths");
             Console.WriteLine("2 - Professional Practices");
             Console.WriteLine("3 - Devices and Platforms");
