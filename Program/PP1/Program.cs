@@ -193,16 +193,66 @@ namespace PP1
 
         static void No3()
         {
-
+            // having trouble with
+            Console.Clear();
+            Console.WriteLine("Is this problem personal or course related?");
+            Console.WriteLine("1 - Personal");
+            Console.WriteLine("2 - Course Related");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+            switch (response)
+            {
+                case '1':
+                    No3_1();
+                    break;
+                case '2':
+                    No3_2();
+                    break;
+                default:
+                    break;
+            }
         }
 
         static void No3_1()
         {
-
+            // personal problem
+            Console.Clear();
+            Console.WriteLine("I will make an appointment for you to talk to student services.");
         }
 
-        static void No3_1_1(int choice)
+        static void No3_2()
         {
+            // course related problem
+            Console.Clear();
+            Console.WriteLine("Would you like to talk to student support or the class teacher?");
+            Console.WriteLine("1 - Student Support");
+            Console.WriteLine("2 - Class Teacher");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+            switch (response)
+            {
+                case '1':
+                    No3_2_1();
+                    break;
+                case '2':
+                    No3_2_2();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        static void No3_2_1()
+        {
+            // course related problem -> refer to student support
+            Console.Clear();
+            Console.WriteLine("I will make an appointment for you to talk to student support");
+
+        }
+        
+        static void No3_2_2()
+        {
+            // course related problem -> refer to class teacher
+            Console.Clear();
+            Console.WriteLine("I will make an appointment for you to talk to a class teacher");
 
         }
 
