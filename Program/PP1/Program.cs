@@ -58,7 +58,7 @@ namespace PP1
             {
                 // Structure for No starts here
                 Console.Clear();
-                Console.WriteLine("I am sorry to hear that you are not enjoying your course. What seems to be the problem?");
+                Console.WriteLine("I am sorry to hear that you are not enjoying your classes. What seems to be the problem?");
                 Console.WriteLine("1 - I don’t understand…");
                 Console.WriteLine("2 - Class is boring");
                 Console.WriteLine("3 - I’m having trouble with…");
