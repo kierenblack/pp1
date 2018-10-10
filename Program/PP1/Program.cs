@@ -91,31 +91,54 @@ namespace PP1
 
         static void Yes2()
         {
-            //string name = "", feedback = "";
+            string name = "", feedback = "";
             Console.Clear();
-            Console.WriteLine("Okay. What do you want to say and to what teacher?");
-            //Where does it read the response and what happens from here? From here it goes to Yes2_1()
-
-            //Yes2_1(name, feedback);
+            Console.WriteLine("Okay. What do you want to say and to what teacher? (name of teacher, what to say");
+            string temp = Console.ReadLine();
+            string[] sentence = temp.Split(',');
+            name = sentence[0];
+            feedback = sentence[1];
+            Yes2_1(name, feedback);
         }
 
         static void Yes2_1(string name, string feedback)
         {
-
+            Console.Clear();
+            Console.WriteLine("I will speak to " + name + " and let them know that you said, " + feedback);
         }
 
         static void Yes3()
         {
             Console.Clear();
             Console.WriteLine("Which class?");
-            //Where does it read the response and what happens from here?
+            Console.WriteLine("1 - Maths");
+            Console.WriteLine("2 - Professional Practices");
+            Console.WriteLine("3 - Devices and Platforms");
+            Console.WriteLine("4 - Programming");
+            char response = Convert.ToChar(Console.ReadKey().KeyChar);
+            switch (response)
+            {
+                case '1':
+                    Yes3_1("Maths");
+                    break;
+                case '2':
+                    Yes3_1("Professional Practices");
+                    break;
+                case '3':
+                    Yes3_1("Devices and Platforms");
+                    break;
+                case '4':
+                    Yes3_1("Programming");
+                    break;
+                default:
+                    break;
+            }
         }
 
-        static void Yes3_1(int subject) // reads subject
+        static void Yes3_1(string subject) // reads subject
         {
             Console.Clear();
-            Console.WriteLine("I will organize extra material for that class");
-            //What happens to the subject that is sent here from the last method?
+            Console.WriteLine("I will organize extra material for " + subject);
         }
 
         static void No1()
@@ -264,7 +287,6 @@ namespace PP1
             // course related problem -> refer to student support
             Console.Clear();
             Console.WriteLine("I will make an appointment for you to talk to student support");
-            Console.ReadLine();
 
         }
 
@@ -273,7 +295,6 @@ namespace PP1
             // course related problem -> refer to class teacher
             Console.Clear();
             Console.WriteLine("I will make an appointment for you to talk to a class teacher");
-            Console.ReadLine();
         }
 
         static void No4()
@@ -316,14 +337,12 @@ namespace PP1
         {
             Console.Clear();
             Console.WriteLine("I will arrange an appointment for you to talk to student services to resolve the matter.");
-            Console.ReadLine();
         }
 
         static void No4_2()
         {
             Console.Clear();
             Console.WriteLine("It's absolutely fine if you do not want to mention their name here. I will arrange an appointment for you to talk to student services to resolve the matter.");
-            Console.ReadLine();
         }
     }
 }
