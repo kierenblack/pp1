@@ -203,7 +203,7 @@ namespace PP1
                     break;
         }
 
-        static void No2_1()
+        static void No2_1(string subject)
         {
              Console.Clear();
             Console.WriteLine("I am sorry to hear that you are finding " + subject + " boring. I will ask your teacher to assign you advanced material.");
@@ -301,7 +301,7 @@ namespace PP1
         }
 
 
-        static void No4_1_1()
+        static void No4_1_1(string name)
         {
            Console.Clear();
            Console.WriteLine("I will Talk to " + name + " about their bullying behaviour.");
@@ -317,7 +317,6 @@ namespace PP1
         {
            Console.Clear();
            Console.WriteLine("It's absolutely fine if you do not want to mention their name here. I will arrange an appointment for you to talk to student services to resolve the matter.");
-           char response = Convert.ToChar(Console.ReadKey().KeyChar);
         }
 
         static char Menu1()
