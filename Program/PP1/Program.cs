@@ -32,7 +32,7 @@ namespace PP1
             static void ResponseYes()
             {
                 Console.Clear();
-                Console.WriteLine("Thats good to hear, what brings you here?");
+                Console.WriteLine("Thats good to hear. What brings you here?");
                 Console.WriteLine("1 - I just wanted to say hello");
                 Console.WriteLine("2 - I just wanted to share feedback");
                 Console.WriteLine("3 - I want extra material for my lectures");
@@ -62,7 +62,7 @@ namespace PP1
                 Console.WriteLine("1 - I don’t understand…");
                 Console.WriteLine("2 - Class is boring");
                 Console.WriteLine("3 - I’m having trouble with…");
-                Console.WriteLine("4 - I’m getting bullied");
+                Console.WriteLine("4 - I’m getting bullied.");
                 char response = Convert.ToChar(Console.ReadKey().KeyChar);
                 switch (response)
                 {
@@ -113,7 +113,7 @@ namespace PP1
             static void Yes3()
             {
                 Console.Clear();
-                Console.WriteLine("Which course you want the extra material for?");
+                Console.WriteLine("Which course do you want the extra material for?");
                 Console.WriteLine("1 - Maths");
                 Console.WriteLine("2 - Professional Practices");
                 Console.WriteLine("3 - Devices and Platforms");
@@ -194,7 +194,7 @@ namespace PP1
                         Console.WriteLine("I will organise some extra material for you.");
                         break;
                     case '2':
-                        Console.WriteLine("I will make an appoint with student support for you.");
+                        Console.WriteLine("I will make an appointment with student support for you.");
                         break;
                     case '3':
                         Console.WriteLine("I will make an appointment for you to talk to your teacher.");
@@ -337,7 +337,7 @@ namespace PP1
             static void No4_1_1(string name)
             {
                 Console.Clear();
-                Console.WriteLine("I will Talk to " + name + " about this bullying behaviour.");
+                Console.WriteLine("I will talk to " + name + " about this bullying behaviour.");
                 Console.ReadLine();
             }
 
