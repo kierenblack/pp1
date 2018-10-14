@@ -14,13 +14,14 @@ namespace PP1
         {
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Red;
-            if (!ran)
+            if (!ran) //Only run the first time the program is run
             {
                 Console.Clear();
                 for (int i = 0; i < 5; i++)
                 {
                     Console.WriteLine();
                 }
+                //Display intro screen
                 displayCentre("**************************************************");
                 displayCentre("*                                                *");
                 displayCentre("* Welcome to the AI Teacher program degigned by: *");
@@ -32,6 +33,8 @@ namespace PP1
                 Console.ReadLine();
                 ran = true;
             }
+
+
             Console.Clear();
             Console.WriteLine("Hello. Are you enjoying your classes?");
             char response = char.ToLower(Console.ReadLine()[0]);
@@ -52,7 +55,7 @@ namespace PP1
 
         }
 
-        static void displayCentre(string s)
+        static void displayCentre(string s) //Centre the message in the middle of the screen
         {
             Console.SetCursorPosition((Console.WindowWidth - s.Length) / 2, Console.CursorTop);
             Console.WriteLine(s);
@@ -60,6 +63,7 @@ namespace PP1
 
         static void ResponseYes()
         {
+            //If the first response is yes
             Console.Clear();
             Console.WriteLine("Thats good to hear. What brings you here?");
             Console.WriteLine("1 - I just wanted to say hello");
@@ -93,7 +97,7 @@ namespace PP1
             Console.WriteLine("3 - I’m having trouble with…");
             Console.WriteLine("4 - I’m getting bullied.");
             char response = Convert.ToChar(Console.ReadKey().KeyChar);
-            switch (response)
+            switch (response) //Branches based on response
             {
                 case '1':
                     No1();
@@ -124,18 +128,18 @@ namespace PP1
             string name = "", feedback = "";
             Console.Clear();
             Console.WriteLine("Okay. Please enter the teachers name and then your feedback?");
-            Console.WriteLine("Please enter the name of the teacher. Then your feedback in next sentence");
+            Console.WriteLine("Please enter the name of the teacher, then your feedback (name, feedback)");
             string temp = Console.ReadLine();
-            string[] sentence = temp.Split('.');
-            name = sentence[0];
-            feedback = sentence[1];
+            string[] sentence = temp.Split(','); //Splits the sentence at the ',' into name and feedback
+            name = sentence[0]; //Grabs the first part of the sentence
+            feedback = sentence[1]; //Grabs the second part of the sentence
             Yes2_1(name, feedback);
         }
 
-        static void Yes2_1(string name, string feedback)
+        static void Yes2_1(string name, string feedback) //reads the name and the feedback
         {
             Console.Clear();
-            Console.WriteLine("I will speak to " + name + " and let them know that you said, " + feedback);
+            Console.WriteLine("I will speak to " + name + " and let them know that you said, " + feedback); //Uses both name and feedback
             //END
         }
 
@@ -177,6 +181,7 @@ namespace PP1
 
         static void No1()
         {
+            //If the response is no from the first question
             Console.Clear();
             Console.WriteLine("What course do you not understand?");
             Console.WriteLine("1 - Maths");
@@ -184,7 +189,7 @@ namespace PP1
             Console.WriteLine("3 - Devices and Platforms");
             Console.WriteLine("4 - Programming");
             char response = Convert.ToChar(Console.ReadKey().KeyChar);
-            switch (response)
+            switch (response) //Passes a string to the next question
             {
                 case '1':
                     No1_1("Maths");
@@ -203,7 +208,7 @@ namespace PP1
             }
         }
 
-        static void No1_1(string subject)
+        static void No1_1(string subject) //reads the subject from the previous selection
         {
             Console.Clear();
             Console.WriteLine("I am sorry to hear you are having problems in " + subject + ". How would you like me to help?");
@@ -211,13 +216,13 @@ namespace PP1
             Console.WriteLine("2 - Student Support");
             Console.WriteLine("3 - Teacher Support");
             char response = Convert.ToChar(Console.ReadKey().KeyChar);
-            No1_1_1(response);
+            No1_1_1(response); //Send the response to the next question
         }
 
-        static void No1_1_1(char option)
+        static void No1_1_1(char option) //Reads the option
         {
             Console.Clear();
-            switch (option)
+            switch (option) //Switches based on the previous selection
             {
                 case '1':
                     Console.WriteLine("I will organise some extra material for you.");
@@ -242,8 +247,8 @@ namespace PP1
             Console.WriteLine("2 - Professional Practices");
             Console.WriteLine("3 - Devices and Platforms");
             Console.WriteLine("4 - Programming");
-            char response = Convert.ToChar(Console.ReadKey().KeyChar);
-            switch (response)
+            char response = Convert.ToChar(Console.ReadKey().KeyChar); //ReadKey is used so the user doesn't have to press enter
+            switch (response) //Passses the response to the next question/method
             {
                 case '1':
                     No2_1("Maths");
@@ -262,7 +267,7 @@ namespace PP1
             }
         }
 
-        static void No2_1(string subject)
+        static void No2_1(string subject) //Reads teh subject
         {
             Console.Clear();
             Console.WriteLine("I am sorry to hear that you are finding " + subject + " boring. I will ask your teacher to assign you some advanced material.");
@@ -305,7 +310,7 @@ namespace PP1
             Console.WriteLine("1 - Student Support");
             Console.WriteLine("2 - Class Teacher");
             char response = Convert.ToChar(Console.ReadKey().KeyChar);
-            switch (response)
+            switch (response) //branches depending on selection
             {
                 case '1':
                     No3_2_1();
@@ -342,7 +347,7 @@ namespace PP1
             No4_1(name);
         }
 
-        static void No4_1(string name)
+        static void No4_1(string name) //Reads the name
         {
             Console.Clear();
             Console.WriteLine("I am sorry to hear you are getting harassed by " + name + ". Bullying/Harassment is not acceptable at Otago Polytechnic. Would you like me to talk to " + name + " or Student Support Team?");
@@ -363,7 +368,7 @@ namespace PP1
         }
 
 
-        static void No4_1_1(string name)
+        static void No4_1_1(string name) //Reads the name
         {
             Console.Clear();
             Console.WriteLine("I will talk to " + name + " about this bullying behaviour.");
