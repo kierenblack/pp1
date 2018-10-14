@@ -338,7 +338,6 @@ namespace PP1
         {
             Console.Clear();
             Console.WriteLine("I will talk to " + name + " about this bullying behaviour.");
-            Console.ReadLine();
         }
 
         static void No4_1_2()
