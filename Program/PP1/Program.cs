@@ -9,25 +9,29 @@ namespace PP1
 {
     class Program
     {
+        public static bool ran = false;
         static void Main()
         {
             Console.BackgroundColor = ConsoleColor.White;
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.Clear();
-            for (int i = 0; i < 5; i++)
+            if (!ran)
             {
-                Console.WriteLine();
+                Console.Clear();
+                for (int i = 0; i < 5; i++)
+                {
+                    Console.WriteLine();
+                }
+                displayCentre("**************************************************");
+                displayCentre("*                                                *");
+                displayCentre("* Welcome to the AI Teacher program degigned by: *");
+                displayCentre("* Sabi, Jae, Kieren, Charmain and Hong           *");
+                displayCentre("*                                                *");
+                displayCentre("* Press any key to begin                         *");
+                displayCentre("*                                                *");
+                displayCentre("**************************************************");
+                Console.ReadLine();
+                ran = true;
             }
-            displayCentre("**************************************************");
-            displayCentre("*                                                *");
-            displayCentre("* Welcome to the AI Teacher program degigned by: *");
-            displayCentre("* Sabi, Jae, Kieren, Charmain and Hong           *");
-            displayCentre("*                                                *");
-            displayCentre("* Press any key to begin                         *");
-            displayCentre("*                                                *");
-            displayCentre("**************************************************");
-            Console.ReadLine();
-
             Console.Clear();
             Console.WriteLine("Hello. Are you enjoying your classes?");
             char response = char.ToLower(Console.ReadLine()[0]);
@@ -42,8 +46,9 @@ namespace PP1
                 default:
                     break;
             }
+            Console.ReadLine();
+            Main();
 
-            Console.ReadLine(); // the end
 
         }
 
