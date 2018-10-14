@@ -11,6 +11,24 @@ namespace PP1
     {
         static void Main()
         {
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.Clear();
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine();
+            }
+            displayCentre("**************************************************");
+            displayCentre("*                                                *");
+            displayCentre("* Welcome to the AI Teacher program degigned by: *");
+            displayCentre("* Sabi, Jae, Kieren, Charmain and Hong           *");
+            displayCentre("*                                                *");
+            displayCentre("* Press any key to begin                         *");
+            displayCentre("*                                                *");
+            displayCentre("**************************************************");
+            Console.ReadLine();
+
+            Console.Clear();
             Console.WriteLine("Hello. Are you enjoying your classes?");
             char response = char.ToLower(Console.ReadLine()[0]);
             switch (response)
@@ -27,6 +45,12 @@ namespace PP1
 
             Console.ReadLine(); // the end
 
+        }
+
+        static void displayCentre(string s)
+        {
+            Console.SetCursorPosition((Console.WindowWidth - s.Length) / 2, Console.CursorTop);
+            Console.WriteLine(s);
         }
 
         static void ResponseYes()
