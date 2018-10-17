@@ -328,6 +328,7 @@ namespace PP1
             // course related problem -> refer to student support
             Console.Clear();
             Console.WriteLine("I will make an appointment for you to talk to student support");
+            Console.ReadLine();
 
         }
 
